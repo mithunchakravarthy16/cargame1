@@ -146,7 +146,7 @@
                     if(keys.ArrowLeft && (player.x > 0))
                     {player.x -= player.speed;}
 
-                    if(keys.ArrowRight && player.x < (road.width - 50))
+                    if(keys.ArrowRight && player.x < (road.width - 60))
                     {player.x += player.speed;}
                     
                     while(player.score === (500*player.speedChange)) {
@@ -190,6 +190,7 @@
                 startScreen.classList.add("hide");
                 // gameArea.classList.remove("hide");
                 gameArea.innerHTML = "";
+                player.score = 0;
     
                 player.start = true;
 
